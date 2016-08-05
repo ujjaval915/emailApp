@@ -1,0 +1,83 @@
+<h3>General Settings</h3>
+<table class="table" ng-controller="settingsController">
+    <tbody>
+    <tr class="success">
+        <td class = "col-xs-3">Language:</td>
+        <td class = "col-xs-9">Gmail display language:
+            <select ng-model = "selectedLang" ng-options="language for language in languages">
+                <option value = ""> Choose a language </option>
+            </select>
+        </td>
+    </tr>
+
+    <tr class="danger">
+        <td class = "col-xs-3">Conversation View</td>
+        <td class = "col-xs-9">
+            <input type = "radio" name = "conversation" id = "converseOn" checked>
+            <label for="converseOn"> Conversation view on </label>
+
+            <aside>
+                <input type = "radio" name = "conversation" id = "converseOff">
+                <label for="converseOff"> Conversation view off </label>
+            </aside>
+    </tr>
+
+    <tr class="info">
+        <td class = "col-xs-3">Maximum page size: </td>
+        <td class = "col-xs-9"> Show conversations per page
+            <select ng-model = "selectedNumber" ng-options="conversation for conversation in conversations">
+                <option value = ""> Choose the no.of conversations to display </option>
+            </select>
+
+            <aside id = "pageSize" > Show contacts per page
+                <select ng-model = "selectedNumberContacts" ng-options="contact for contact in contacts">
+                    <option value = ""> Choose the no.of contacts to display </option>
+                </select>
+            </aside>
+        </td>
+    </tr>
+
+    <tr class="success">
+        <td class = "col-xs-3">Default reply behavior:</td>
+        <td class = "col-xs-9">
+            <input type = "radio" name = "replySetting" id = "reply" checked>
+            <label for="reply"> Reply </label>
+
+            <aside>
+                <input type = "radio" name = "replySetting" id = "replyAll">
+                <label for="replyAll"> Reply all</label>
+            </aside>
+    </tr>
+
+    <tr class="danger">
+        <td class = "col-xs-3">Undo Send:</td>
+        <td class = "col-xs-9">
+            <input type = "checkbox" id = "undoSend" ng-click = "undoSend.displayCancelPeriod()">
+            <label for="undoSend"> Enable Undo Send  </label>
+
+            <aside ng-show = "undoSend.cancelPeriod" ng-cloak  > Send cancellation period:
+                <select ng-model = "selectedSeconds" ng-options="second for second in seconds">
+                    <option value = ""> Choose the no.of seconds </option>
+                </select>
+            </aside>
+        </td>
+    </tr>
+
+    <tr class="info">
+        <td class = "col-xs-3">Signature:  </td>
+        <td class = "col-xs-9">
+            <input type = "radio" name = "signature" ng-click = "signature.disableTextarea()" id = "noSignature" checked>
+            <label for="noSignature"> No signature </label>
+            <div class="span12" >
+                <input type = "radio" name = "signature" ng-click = "signature.enableTextarea()" id = "signature">
+                <textarea class="field span6" id="textarea" rows="6" cols = "50" placeholder="Enter a signature" ng-disabled = "signature.typeSignature"></textarea>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="form-actions">
+    <button type="submit" class="btn btn-primary">Save changes</button>
+    <button type="button" class="btn">Cancel</button>
+</div>

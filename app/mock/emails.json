@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "to": "Pavan",
+      "from": "Kiran",
+      "subject": "AngularAssign",
+      "readStatus": "unread",
+      "starred": "starred",
+      "importantTag": "important",
+      "content": "AngularJS Class",
+      "time": "Aug 30",
+      "deletedStatus": "not deleted",
+      "category":"Social"
+    },
+    {
+      "id": "2",
+      "to": "Madhu",
+      "from": "Kiran",
+      "subject": "AngularProject",
+      "readStatus": "read",
+      "starred": "unstarred",
+      "importantTag": "not important",
+      "content": "AngularJS Routers",
+      "time": "Aug 29",
+      "deletedStatus": "not deleted",
+      "category":"Promotions"
+    },
+    {
+      "id": "3",
+      "to": "Slesha",
+      "from": "Kiran",
+      "subject": "AngularTemplate",
+      "readStatus": "Unread",
+      "starred": "unstarred",
+      "importantTag": "important",
+      "content": "Angularjs Template Creation",
+      "time": "Aug 28",
+      "deletedStatus": "deleted",
+      "category":"Social"
+    },
+    {
+      "id": "4",
+      "to": "Chiru",
+      "from": "Kiran",
+      "subject": "AngularJS Session",
+      "readStatus": "read",
+      "starred": "unstarred",
+      "importantTag": "important",
+      "content": "Angularjs Directives",
+      "time": "Aug 27",
+      "deletedStatus": "not deleted",
+      "category":"Primary"
+    },
+    {
+      "id": "5",
+      "to": "Nani",
+      "from": "Kiran",
+      "subject": "AngularJS Services",
+      "readStatus": "read",
+      "starred": "starred",
+      "importantTag": "important",
+      "content": "AngularJS services class",
+      "time": "Aug 26",
+      "deletedStatus": "deleted",
+      "category":"Primary"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "leftMenu":[{"name":"Inbox","emailCount":40
+  },
+    {"name":"Starred","emailCount":40
+    },
+    {"name":"Important","emailCount":40
+    },
+    {"name":"Sent","emailCount":40
+    },
+    {"name":"Drafts","emailCount":40
+    }]
+}

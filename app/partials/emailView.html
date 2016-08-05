@@ -1,0 +1,13 @@
+<table class="table table-hover" ng-controller="emailViewController">
+    <tbody>
+    <tr ng-repeat="email in filteredEmails" >
+        <td><input type="checkbox" ng-checked="checkAllEmail" ng-model="selectedEmail"/>
+            <a href="#">
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </a></td>
+        <td><label ng-bind="email.to"></label></td>
+        <td><label ng-bind="email.subject"></label></td>
+        <td><label ng-bind="email.time"></label></td>
+    </tr>
+    </tbody>
+</table>
